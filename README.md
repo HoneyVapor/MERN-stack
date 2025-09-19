@@ -1,5 +1,8 @@
 # Ruta de aprendizaje JS (JavaScript) 
 
+## Parte 1
+<hr/>
+
 ## Variables y tipos de datos
 Vamos a comenzar con las variables y tipos de datos en JavaScript. Empezando por definir apropiadamente una variable, ya que esto es importante para JavaScript, y en gral. para cualquier lenguaje de programacion.
 
@@ -47,3 +50,9 @@ En la programacion estructurada, se organiza el codigo en funciones y bloques de
 ### Programacion Orientada a Objetos
 En la programacion orientada a objetos, se organiza el codigo en objetos, y cada objeto tiene propiedades y metodos. Se utilizan clases para definir objetos, y se utilizan instancias de clases para crear objetos. 
 Ademas, en la POO se utilizan conceptos como herencia, polimorfismo y encapsulamiento para organizar y estructurar el codigo de manera mas eficiente y reutilizable.
+
+
+## Parte 2
+<hr/>
+
+Proximamente...
