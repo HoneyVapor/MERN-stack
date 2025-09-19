@@ -13,9 +13,14 @@
  *
  *
  *
- * Pero antes que todo, vamos a presentar la sintaxis basica de JS (del Javascript vanilla antiguo).
- *
+ * Pero antes que todo, vamos a presentar la sintaxis basica de JS (del Javascript vanilla antiguo). 
+    ? - Para esto debemos ejecutar el siguiente comando en la terminal:
+    ! - npm install
  */
+
+// Importar prompt-sync para habilitar la funcionalidad de prompt() en Node.js
+var prompt = require("prompt-sync")();
+
 function evaluarTipoDe(dato) {
   return typeof dato;
 }
@@ -70,7 +75,7 @@ console.log(evaluarTipoDe(minumero));
 console.log(evaluarTipoDe(miboleano));
 console.log(evaluarTipoDe(miobjeto));
 console.log(evaluarTipoDe(miarray));
-console.log(evaluarTipoDe(mifuncion)); //! NOTAR QUE ESTO NO EXISTE
+console.log(evaluarTipoDe()); //! NOTAR QUE ESTO NO EXISTE (Poner el nombre de la funcion que creaste aqui)
 
 //! ESTRUCTURAS DE CONTROL
 //* 1. If-Else
