@@ -169,3 +169,23 @@ function division(a, b) {
  *
  */
 //? Ahora bien, ya hecho esto, podemos comenzar por proyectos sencillos como una calculadora.
+function suma(numero1, numero2) {
+  //? Crear aqui una funcion para suma
+}
+
+function resta(numero1, numero2) {
+  //? Crear aqui una funcion para resta
+}
+
+function multiplicacion(numero1, numero2) {
+  //? Crear aqui una funcion para multiplicacion
+}
+
+function division(numero1, numero2) {
+  //? Crear aqui una funcion para division
+}
+
+function main() {
+  //? Poner aqui la logica de la calculadora
+}
+main();
