@@ -370,3 +370,146 @@ class Calculadora {
 //? Mas adelante veremos lo que son las constantes, por ahora, solo usaremos la constante para declarar
 //? el acceso a la clase Calculadora y sus metodos.
 const calculadora = new Calculadora();
+
+//* Ahora, para usar la calculadora, simplemente se llama al metodo que se desea usar.
+//* Por ejemplo, para sumar dos numeros, se llama al metodo sumar() y se le pasa dos parametros.
+//* En este caso, se suman 5 y 3, y el resultado debe ser 8.
+console.log(calculadora.sumar(5, 3));
+
+/*
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+// TODO: Ya entendido esto, veremos la herencia dentro de la POO.
+//? (cabe mencionar que todo esto es solo una introduccion a la POO,
+//?  y hay muchisimas cosas mas que se pueden hacer con ella)
+
+//* Ademas, es una muy buena practica manejar la POO, en un lenguaje de alto nivel
+//* como lo es JavaScript, ya que permite organizar el codigo de manera mas clara
+//* y modular, lo que facilita la mantenimiento y la extension del codigo.
+
+/*
+!
+! Para concluir, la POO es una forma de organizar el codigo de manera mas clara y modular,
+! lo que facilita la mantenimiento y la extension del codigo.
+! 
+! Ahora bien, en la POO existen la herencia y el polimorfismo.
+!
+! Que es la herencia?
+! La herencia es una forma de reutilizar codigo en la POO.
+! En otras palabras, una clase puede heredar atributos y metodos de otra clase.
+! 
+! Que es el polimorfismo?
+! El polimorfismo es una forma de reutilizar codigo en la POO.
+! En otras palabras, una clase puede heredar atributos y metodos de otra clase,
+! y a la vez, puede modificar el comportamiento de esos metodos.
+! 
+! En palabras mas simples, es como todo sistema, esta compuesto de partes que trabajan juntas
+! para realizar una tarea. En la POO, las clases son como los planos de las partes,
+! y los objetos son como las partes reales del sistema.
+!
+! Haremos un ejemplo algo mas avanzado pero mas realista de un caso de uso de la herencia.
+!
+!
+*/
+
+//* Aqui esta mucho mas claro como funciona la herencia.
+//* En este caso, la clase Usuario hereda los atributos nombre y edad de la clase Persona.
+//* Ademas, la clase Usuario tiene sus propios atributos correo y contraseña.
+class Persona {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+
+  camina() {
+    return true;
+  }
+}
+class Usuario extends Persona {
+  constructor(nombre, edad, correo, contraseña) {
+    super(nombre, edad);
+    this.correo = correo;
+    this.contraseña = contraseña;
+  }
+
+  enviaMensajes() {
+    return `Hola yo soy ${this.nombre}!`;
+  }
+}
+class Programador extends Persona {
+  constructor(nombre, edad, lenguajes, tecnologias) {
+    super(nombre, edad);
+    this.lenguajes = lenguajes;
+    this.tecnologias = tecnologias;
+  }
+
+  programar() {
+    const programando = "Programando...";
+    return programando;
+  }
+}
+
+//? Sabemos que hay dos clases de Personas;
+//? la clase Programador (semidioses) y la clase Usuario (mortales promedio).
+//? La clase Usuario hereda los atributos nombre y edad de la clase Persona.
+//? Ademas, la clase Usuario tiene sus propios atributos correo y contraseña.
+const elPekas = new Persona("Yo que se", 35);
+elPekas.nombre; //? "Yo que se"
+elPekas.edad; //? 35
+elPekas.camina(); //? true
+
+const chetoki = new Usuario("Leo", 5, "chetoki@example.com", "12345");
+chetoki.nombre; //? "Leo"
+chetoki.edad; //? 5
+chetoki.correo; //? "chetoki@example.com"
+chetoki.contraseña; //? "12345"
+chetoki.enviaMensajes(); //? "Hola yo soy Leo!"
+
+const emi = new Programador(
+  "Emiliano",
+  22,
+  ["JavaScript", "Python"],
+  ["React", "Node.js"]
+);
+emi.nombre; //? "Emiliano"
+emi.edad; //? 22
+emi.lenguajes; //? ["JavaScript", "Python"]
+emi.tecnologias; //? ["React", "Node.js"]
+emi.programar(); //? "Programando..."
+
+//* Las clases normalmente se inicializan sin los parametros que se le pasan al constructor.
+//* En este caso, la clase Programador tiene los parametros nombre, edad, lenguajes y tecnologias.
+//* Por lo tanto, para inicializar una instancia de la clase Programador,
+//* se debe pasar los parametros nombre, edad, lenguajes y tecnologias.
+const cesar = new Programador();
+cesar.edad = AGREGA_TU_EDAD_AQUI;
+cesar.nombre = "Cesar"; //? "Cesar"
+cesar.lenguajes = [AGREGA_ELEMENTOS_AQUI]; //? []
+cesar.tecnologias = [AGREGA_ELEMENTOS_AQUI]; //? []
+cesar.camina(); //? true
+//! Esto ^^^ significa que Cesar puede caminar. (Hereda de la superclase o clase Persona)
+cesar.programar(); //? "Programando..."
+
+//TODO: Lo siguiente es migrar el codigo de JavaScript antiguo
+//TODO: a EcmaScript 6 (ES6), que es el JS moderno...
