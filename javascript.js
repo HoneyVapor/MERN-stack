@@ -1,3 +1,4 @@
+//!# ------------------------------ INTRODUCCIÓN ------------------------------
 /*
  * Para comenzar (requisitos previos): 
     ! - Tener instalado Node.js *
@@ -174,6 +175,7 @@ function division(a, b) {
  *
  *
  */
+//!# ------------------------------ PRIMER PROYECTO ------------------------------
 //? Ahora bien, ya hecho esto, podemos comenzar por proyectos sencillos como una calculadora.
 function suma(numero1, numero2) {
   //? Crear aqui una funcion para suma
@@ -219,6 +221,8 @@ main();
  *
  *
  */
+
+//!# ------------------------------ INTRODUCCIÓN A POO ------------------------------
 //* Ahora, una vez entendida la programacion estructurada, podemos comenzar a crear proyectos mas complejos.
 //* Comenzaremos formalmente con la POO (Programacion Orientada a Objetos)
 
@@ -351,7 +355,7 @@ carrazo.cambiarDeMarcha();
  *
  *
  */
-
+//!# ------------------------------ SEGUNDO PROYECTO ------------------------------
 //! SIGUIENTE TEMA: CREAR UNA CALCULADORA EN POO:
 class Calculadora {
   constructor() {
@@ -400,6 +404,7 @@ console.log(calculadora.sumar(5, 3));
  *
  */
 
+//!# ------------------------------ INTRODUCCIÓN A HERENCIA Y POLIMORFISMO ------------------------------
 // TODO: Ya entendido esto, veremos la herencia dentro de la POO.
 //? (cabe mencionar que todo esto es solo una introduccion a la POO,
 //?  y hay muchisimas cosas mas que se pueden hacer con ella)
